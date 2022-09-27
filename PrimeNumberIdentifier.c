@@ -17,10 +17,34 @@ int main()
     int userOption;
     scanf("%d", &userOption);
     getchar();
-   // if(userOption)
+    if(userOption == 1){
+        if(prime(number)){
+            printf("%d is a prime number\n", number);
+        }
+    }else if(userOption == 2){
+        printf("The Sub Prime are ");
+         for(int i = number; i > 1; i--){
+            if(prime(i)){
+            printf("%d", i);
+                if(i == 2){
+                    printf(".");
+                }else{
+                    printf(", ");
+                }
+             }
+            }
+            printf("\n");
+    }else if(userOption == 3){
+        printf("The total Sub Prime number inclusive is ");
+        int primeCounter = 0;
 
-
-
+        for(int i = number; i > 1; i--){
+            if(prime(i)){
+                primeCounter++;
+            }
+        }
+        printf("%d \n",primeCounter);
+    }
 }
 
 //prime function
