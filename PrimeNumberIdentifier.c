@@ -76,4 +76,6 @@ bool prime(int input){
         return true;
    
 }
+ git config --global user.email "humphreyeghelonohor@yahoo.com"
+  git config --global user.name "Humphrey Eghelonohor"
 */
